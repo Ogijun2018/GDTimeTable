@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBED9CCD293B957800665BDF /* GDTimeTableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CCC293B957800665BDF /* GDTimeTableApp.swift */; };
+		FBED9CCF293B957800665BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CCE293B957800665BDF /* ContentView.swift */; };
+		FBED9CD1293B957A00665BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBED9CD0293B957A00665BDF /* Assets.xcassets */; };
+		FBED9CD4293B957A00665BDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBED9CD3293B957A00665BDF /* Preview Assets.xcassets */; };
+		FBED9CDE293B957A00665BDF /* GDTimeTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CDD293B957A00665BDF /* GDTimeTableTests.swift */; };
+		FBED9CE8293B957A00665BDF /* GDTimeTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CE7293B957A00665BDF /* GDTimeTableUITests.swift */; };
+		FBED9CEA293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CE9293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift */; };
+		FBED9CF7293BA25C00665BDF /* PeriodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CF6293BA25C00665BDF /* PeriodCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBED9CDA293B957A00665BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBED9CC1293B957800665BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBED9CC8293B957800665BDF;
+			remoteInfo = GDTimeTable;
+		};
+		FBED9CE4293B957A00665BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBED9CC1293B957800665BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBED9CC8293B957800665BDF;
+			remoteInfo = GDTimeTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBED9CC9293B957800665BDF /* GDTimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDTimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBED9CCC293B957800665BDF /* GDTimeTableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableApp.swift; sourceTree = "<group>"; };
+		FBED9CCE293B957800665BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBED9CD0293B957A00665BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBED9CD3293B957A00665BDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBED9CD9293B957A00665BDF /* GDTimeTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDTimeTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBED9CDD293B957A00665BDF /* GDTimeTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableTests.swift; sourceTree = "<group>"; };
+		FBED9CE3293B957A00665BDF /* GDTimeTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDTimeTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBED9CE7293B957A00665BDF /* GDTimeTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableUITests.swift; sourceTree = "<group>"; };
+		FBED9CE9293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBED9CF6293BA25C00665BDF /* PeriodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBED9CC6293B957800665BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED9CD6293B957A00665BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED9CE0293B957A00665BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBED9CC0293B957800665BDF = {
+			isa = PBXGroup;
+			children = (
+				FBED9CCB293B957800665BDF /* GDTimeTable */,
+				FBED9CDC293B957A00665BDF /* GDTimeTableTests */,
+				FBED9CE6293B957A00665BDF /* GDTimeTableUITests */,
+				FBED9CCA293B957800665BDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBED9CCA293B957800665BDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBED9CC9293B957800665BDF /* GDTimeTable.app */,
+				FBED9CD9293B957A00665BDF /* GDTimeTableTests.xctest */,
+				FBED9CE3293B957A00665BDF /* GDTimeTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBED9CCB293B957800665BDF /* GDTimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				FBED9CCC293B957800665BDF /* GDTimeTableApp.swift */,
+				FBED9CCE293B957800665BDF /* ContentView.swift */,
+				FBED9CF6293BA25C00665BDF /* PeriodCell.swift */,
+				FBED9CD0293B957A00665BDF /* Assets.xcassets */,
+				FBED9CD2293B957A00665BDF /* Preview Content */,
+			);
+			path = GDTimeTable;
+			sourceTree = "<group>";
+		};
+		FBED9CD2293B957A00665BDF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBED9CD3293B957A00665BDF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBED9CDC293B957A00665BDF /* GDTimeTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBED9CDD293B957A00665BDF /* GDTimeTableTests.swift */,
+			);
+			path = GDTimeTableTests;
+			sourceTree = "<group>";
+		};
+		FBED9CE6293B957A00665BDF /* GDTimeTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBED9CE7293B957A00665BDF /* GDTimeTableUITests.swift */,
+				FBED9CE9293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift */,
+			);
+			path = GDTimeTableUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBED9CC8293B957800665BDF /* GDTimeTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBED9CED293B957A00665BDF /* Build configuration list for PBXNativeTarget "GDTimeTable" */;
+			buildPhases = (
+				FBED9CC5293B957800665BDF /* Sources */,
+				FBED9CC6293B957800665BDF /* Frameworks */,
+				FBED9CC7293B957800665BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDTimeTable;
+			productName = GDTimeTable;
+			productReference = FBED9CC9293B957800665BDF /* GDTimeTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBED9CD8293B957A00665BDF /* GDTimeTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBED9CF0293B957A00665BDF /* Build configuration list for PBXNativeTarget "GDTimeTableTests" */;
+			buildPhases = (
+				FBED9CD5293B957A00665BDF /* Sources */,
+				FBED9CD6293B957A00665BDF /* Frameworks */,
+				FBED9CD7293B957A00665BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBED9CDB293B957A00665BDF /* PBXTargetDependency */,
+			);
+			name = GDTimeTableTests;
+			productName = GDTimeTableTests;
+			productReference = FBED9CD9293B957A00665BDF /* GDTimeTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBED9CE2293B957A00665BDF /* GDTimeTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBED9CF3293B957A00665BDF /* Build configuration list for PBXNativeTarget "GDTimeTableUITests" */;
+			buildPhases = (
+				FBED9CDF293B957A00665BDF /* Sources */,
+				FBED9CE0293B957A00665BDF /* Frameworks */,
+				FBED9CE1293B957A00665BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBED9CE5293B957A00665BDF /* PBXTargetDependency */,
+			);
+			name = GDTimeTableUITests;
+			productName = GDTimeTableUITests;
+			productReference = FBED9CE3293B957A00665BDF /* GDTimeTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBED9CC1293B957800665BDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FBED9CC8293B957800665BDF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FBED9CD8293B957A00665BDF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FBED9CC8293B957800665BDF;
+					};
+					FBED9CE2293B957A00665BDF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FBED9CC8293B957800665BDF;
+					};
+				};
+			};
+			buildConfigurationList = FBED9CC4293B957800665BDF /* Build configuration list for PBXProject "GDTimeTable" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBED9CC0293B957800665BDF;
+			productRefGroup = FBED9CCA293B957800665BDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBED9CC8293B957800665BDF /* GDTimeTable */,
+				FBED9CD8293B957A00665BDF /* GDTimeTableTests */,
+				FBED9CE2293B957A00665BDF /* GDTimeTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBED9CC7293B957800665BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBED9CD4293B957A00665BDF /* Preview Assets.xcassets in Resources */,
+				FBED9CD1293B957A00665BDF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED9CD7293B957A00665BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED9CE1293B957A00665BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBED9CC5293B957800665BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBED9CCF293B957800665BDF /* ContentView.swift in Sources */,
+				FBED9CF7293BA25C00665BDF /* PeriodCell.swift in Sources */,
+				FBED9CCD293B957800665BDF /* GDTimeTableApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED9CD5293B957A00665BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBED9CDE293B957A00665BDF /* GDTimeTableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBED9CDF293B957A00665BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBED9CE8293B957A00665BDF /* GDTimeTableUITests.swift in Sources */,
+				FBED9CEA293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBED9CDB293B957A00665BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBED9CC8293B957800665BDF /* GDTimeTable */;
+			targetProxy = FBED9CDA293B957A00665BDF /* PBXContainerItemProxy */;
+		};
+		FBED9CE5293B957A00665BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBED9CC8293B957800665BDF /* GDTimeTable */;
+			targetProxy = FBED9CE4293B957A00665BDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBED9CEB293B957A00665BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBED9CEC293B957A00665BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBED9CEE293B957A00665BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GDTimeTable/Preview Content\"";
+				DEVELOPMENT_TEAM = VZBG2DMPDR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogijun.GDTimeTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBED9CEF293B957A00665BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GDTimeTable/Preview Content\"";
+				DEVELOPMENT_TEAM = VZBG2DMPDR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogijun.GDTimeTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBED9CF1293B957A00665BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZBG2DMPDR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogijun.GDTimeTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDTimeTable.app/GDTimeTable";
+			};
+			name = Debug;
+		};
+		FBED9CF2293B957A00665BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZBG2DMPDR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogijun.GDTimeTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDTimeTable.app/GDTimeTable";
+			};
+			name = Release;
+		};
+		FBED9CF4293B957A00665BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZBG2DMPDR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogijun.GDTimeTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GDTimeTable;
+			};
+			name = Debug;
+		};
+		FBED9CF5293B957A00665BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZBG2DMPDR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogijun.GDTimeTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GDTimeTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBED9CC4293B957800665BDF /* Build configuration list for PBXProject "GDTimeTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBED9CEB293B957A00665BDF /* Debug */,
+				FBED9CEC293B957A00665BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBED9CED293B957A00665BDF /* Build configuration list for PBXNativeTarget "GDTimeTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBED9CEE293B957A00665BDF /* Debug */,
+				FBED9CEF293B957A00665BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBED9CF0293B957A00665BDF /* Build configuration list for PBXNativeTarget "GDTimeTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBED9CF1293B957A00665BDF /* Debug */,
+				FBED9CF2293B957A00665BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBED9CF3293B957A00665BDF /* Build configuration list for PBXNativeTarget "GDTimeTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBED9CF4293B957A00665BDF /* Debug */,
+				FBED9CF5293B957A00665BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBED9CC1293B957800665BDF /* Project object */;
+}
