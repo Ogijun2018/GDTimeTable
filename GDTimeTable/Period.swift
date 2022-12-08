@@ -1,14 +1,13 @@
 //
-//  PeriodCell.swift
+//  Period.swift
 //  GDTimeTable
 //
-//  Created by Jun Ogino on 2022/12/04.
+//  Created by Jun Ogino on 2022/12/09.
 //
 
-import Foundation
 import SwiftUI
 
-struct PeriodCell: View {
+struct Period: View {
     let periodName: String
     let color: Color
 //    let bgColor: Color
@@ -37,9 +36,9 @@ struct PeriodCell: View {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundStyle(bgColor)
                         // 上側の凸をshadowで表現
-                        .shadow(color: .white, radius: 5, x: -4, y: -4)
+                        .shadow(color: .white, radius: 5, x: 4, y: 4)
                         // 下側の凸をshadowで表現
-                        .shadow(color: grayColor, radius: 5, x: 4, y: 4)
+                        .shadow(color: grayColor, radius: 5, x: -4, y: -4)
                 )
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
@@ -55,8 +54,8 @@ struct PeriodCell: View {
     }
 }
 
-struct PeriodCell_Previews: PreviewProvider {
+struct Period_Previews: PreviewProvider {
     static var previews: some View {
-        PeriodCell(periodName: "sample", color: .blue)
+        Period(periodName: "sample", color: .blue)
     }
 }

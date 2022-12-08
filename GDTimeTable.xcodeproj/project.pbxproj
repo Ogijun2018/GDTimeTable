@@ -15,6 +15,7 @@
 		FBED9CE8293B957A00665BDF /* GDTimeTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CE7293B957A00665BDF /* GDTimeTableUITests.swift */; };
 		FBED9CEA293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CE9293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift */; };
 		FBED9CF7293BA25C00665BDF /* PeriodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CF6293BA25C00665BDF /* PeriodCell.swift */; };
+		FBED9CFB294240DF00665BDF /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CFA294240DF00665BDF /* Period.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		FBED9CE7293B957A00665BDF /* GDTimeTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableUITests.swift; sourceTree = "<group>"; };
 		FBED9CE9293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBED9CF6293BA25C00665BDF /* PeriodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCell.swift; sourceTree = "<group>"; };
+		FBED9CFA294240DF00665BDF /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				FBED9CCC293B957800665BDF /* GDTimeTableApp.swift */,
 				FBED9CCE293B957800665BDF /* ContentView.swift */,
+				FBED9CFA294240DF00665BDF /* Period.swift */,
 				FBED9CF6293BA25C00665BDF /* PeriodCell.swift */,
 				FBED9CD0293B957A00665BDF /* Assets.xcassets */,
 				FBED9CD2293B957A00665BDF /* Preview Content */,
@@ -262,6 +265,7 @@
 			files = (
 				FBED9CCF293B957800665BDF /* ContentView.swift in Sources */,
 				FBED9CF7293BA25C00665BDF /* PeriodCell.swift in Sources */,
+				FBED9CFB294240DF00665BDF /* Period.swift in Sources */,
 				FBED9CCD293B957800665BDF /* GDTimeTableApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

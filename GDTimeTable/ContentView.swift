@@ -14,33 +14,32 @@ struct ContentView: View {
 }
 
 struct VerticalSmileys: View {
-//    let columns = [GridItem(.flexible()), GridItem(.flexible())]
-    var data = ["mon-1", "tue-1", "wed-1", "thu-1", "fri-1", "mon-2", "mon-3", "mon-4"]
+    var data = ["ソフトウエア工学", "基礎科学実験A", "基礎科学実験B", "化学I", "線形代数学", "情報学演習", "体育", "社会情報学"]
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 5)
+    var hoge: [GridItem] = [GridItem(.fixed(1))]
+    let bgColor = Color.init(red: 0.92, green: 0.93, blue: 0.94)
     
     var body: some View {
-         ScrollView {
-             LazyVGrid(columns: columns) {
-                 ForEach(data, id: \.self) { value in
-                     Button(action: {
-                         print("button tapped")
-                     }, label: {
-                         Text(value)
-                             .padding()
-                             .frame(maxWidth: .infinity, maxHeight: .infinity)
-                             .overlay(RoundedRectangle(cornerRadius: 10).stroke(.blue, lineWidth: 2))
-                             .shadow(color: .black, radius: 4, x: 1, y: 1)
-                             .font(.body)
-                     })
-                 }
-             }
-         }
+        ZStack {
+            bgColor.ignoresSafeArea()
+            ScrollView {
+                bgColor.ignoresSafeArea()
+                LazyVGrid(columns: columns) {
+                    ForEach((1...50), id: \.self) { value in
+                        if(value % 5 == 1) {
+                            
+                        } else {
+                            PeriodCell(periodName: String(value), color: .blue)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         VerticalSmileys()
-            
     }
 }
