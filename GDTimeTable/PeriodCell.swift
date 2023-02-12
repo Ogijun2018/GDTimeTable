@@ -7,56 +7,59 @@
 
 import Foundation
 import SwiftUI
+import UIKit
 
 struct PeriodCell: View {
     let periodName: String
     let color: Color
-//    let bgColor: Color
-    let bgColor = Color.init(red: 0.92, green: 0.93, blue: 0.94)
-    let grayColor = Color.init(white: 0.8, opacity: 1)
+    let width: CGFloat
+    let onPress: (() -> Void)?
+    var height: CGFloat {
+        get { width * 1.2 }
+    }
+
+    var lightColor: Color {
+        get { Color(UIColor(color).brightness(ratio: 1.2)) }
+    }
+    var shadowColor: Color {
+        get { Color(UIColor(color).brightness(ratio: 0.8)) }
+    }
+    let radius = CGFloat(10)
 
     var body: some View {
         ZStack {
-            // whiteの影を使うため若干グレーがかった背景を使う
-            bgColor.ignoresSafeArea()
             Button(action: {
-                print("button tapped")
+                onPress?()
             }){
-                VStack {
-                    Text(periodName)
-                        .padding(.vertical, 3)
-                        .font(.system(size: 10, weight: .bold))
-                        .frame(minWidth: 30, maxWidth: 100, minHeight: 50, maxHeight: 100)
-                    Text("C401")
-                    Text("山田")
-                }
-                .font(.system(size: 8, weight: .semibold, design: .rounded))
-                .foregroundColor(.gray)
-                .padding(10)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundStyle(bgColor)
-                        // 上側の凸をshadowで表現
-                        .shadow(color: .white, radius: 5, x: -4, y: -4)
-                        // 下側の凸をshadowで表現
-                        .shadow(color: grayColor, radius: 5, x: 4, y: 4)
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(.gray, lineWidth: 0)
-                )
+                Text(periodName)
+                    .font(.system(size: 13, weight: .semibold, design: .default))
+                    .foregroundColor(.white)
+                    .frame(width: width, height: height)
+                    .background(
+                        RoundedRectangle(cornerRadius: radius)
+                            .fill(
+                                // gloss in button
+                                .shadow(.inner(color: lightColor, radius: 6, x: 4, y: 4))
+                                // shadow in button
+                                .shadow(.inner(color: shadowColor, radius: 6, x: -4, y: -4))
+                            )
+                            .foregroundColor(color)
+                            .shadow(color: color, radius: 5, y: 0)
+                    )
             }
         }
     }
     
-    init(periodName: String, color: Color) {
+    init(periodName: String, color: Color, width: CGFloat, onPress: (() -> Void)?) {
         self.periodName = periodName
         self.color = color
+        self.width = width
+        self.onPress = onPress
     }
 }
 
 struct PeriodCell_Previews: PreviewProvider {
     static var previews: some View {
-        PeriodCell(periodName: "sample", color: .blue)
+        PeriodCell(periodName: "現代社会", color: Color.CellBlue, width: 100, onPress: nil)
     }
 }

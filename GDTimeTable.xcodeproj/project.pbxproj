@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB42F00C2998D0790015ACBB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42F00B2998D0790015ACBB /* ColorExtension.swift */; };
+		FB42F0102998DC1A0015ACBB /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42F00F2998DC1A0015ACBB /* EditView.swift */; };
 		FBED9CCD293B957800665BDF /* GDTimeTableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CCC293B957800665BDF /* GDTimeTableApp.swift */; };
 		FBED9CCF293B957800665BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CCE293B957800665BDF /* ContentView.swift */; };
 		FBED9CD1293B957A00665BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBED9CD0293B957A00665BDF /* Assets.xcassets */; };
@@ -15,7 +17,6 @@
 		FBED9CE8293B957A00665BDF /* GDTimeTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CE7293B957A00665BDF /* GDTimeTableUITests.swift */; };
 		FBED9CEA293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CE9293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift */; };
 		FBED9CF7293BA25C00665BDF /* PeriodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CF6293BA25C00665BDF /* PeriodCell.swift */; };
-		FBED9CFB294240DF00665BDF /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED9CFA294240DF00665BDF /* Period.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB42F00B2998D0790015ACBB /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		FB42F00F2998DC1A0015ACBB /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		FBED9CC9293B957800665BDF /* GDTimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDTimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBED9CCC293B957800665BDF /* GDTimeTableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableApp.swift; sourceTree = "<group>"; };
 		FBED9CCE293B957800665BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		FBED9CE7293B957A00665BDF /* GDTimeTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableUITests.swift; sourceTree = "<group>"; };
 		FBED9CE9293B957A00665BDF /* GDTimeTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTimeTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBED9CF6293BA25C00665BDF /* PeriodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCell.swift; sourceTree = "<group>"; };
-		FBED9CFA294240DF00665BDF /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				FBED9CCC293B957800665BDF /* GDTimeTableApp.swift */,
+				FB42F00B2998D0790015ACBB /* ColorExtension.swift */,
 				FBED9CCE293B957800665BDF /* ContentView.swift */,
-				FBED9CFA294240DF00665BDF /* Period.swift */,
+				FB42F00F2998DC1A0015ACBB /* EditView.swift */,
 				FBED9CF6293BA25C00665BDF /* PeriodCell.swift */,
 				FBED9CD0293B957A00665BDF /* Assets.xcassets */,
 				FBED9CD2293B957A00665BDF /* Preview Content */,
@@ -263,9 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB42F00C2998D0790015ACBB /* ColorExtension.swift in Sources */,
 				FBED9CCF293B957800665BDF /* ContentView.swift in Sources */,
 				FBED9CF7293BA25C00665BDF /* PeriodCell.swift in Sources */,
-				FBED9CFB294240DF00665BDF /* Period.swift in Sources */,
+				FB42F0102998DC1A0015ACBB /* EditView.swift in Sources */,
 				FBED9CCD293B957800665BDF /* GDTimeTableApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +467,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
